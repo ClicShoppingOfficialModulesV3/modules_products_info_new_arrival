@@ -1,0 +1,2 @@
+module_products_info_new_arrival = Souhaitez-vous afficher une information nouveau produit ?
+module_products_info_new_arrival_description = Affiche une information nouveau produit dans la page de description du produit

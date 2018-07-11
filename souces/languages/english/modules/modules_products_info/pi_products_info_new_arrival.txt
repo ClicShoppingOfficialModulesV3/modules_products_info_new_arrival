@@ -1,0 +1,3 @@
+
+ module_products_info_new_arrival = Do you want to display an information on a new product ?
+ module_products_info_new_arrival_description = Display an information New Product on the product description page
