@@ -28,5 +28,6 @@ Implementation:
 - Menu design / Products description
 - https://monsite/myAdmin/modules.php?set=modules_products_info
 - Activate the module
+
 - Copy the modules_products_info_new_arrival.json into ClicShopping/Work/Cache/Github (manual installation)
 
