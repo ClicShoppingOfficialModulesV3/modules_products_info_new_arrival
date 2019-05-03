@@ -34,12 +34,12 @@
     }
 
     public function execute() {
+      $CLICSHOPPING_ProductsCommon = Registry::get('ProductsCommon');
 
-      if (isset($_GET['products_id']) && isset($_GET['Products']) ) {
+      if ($CLICSHOPPING_ProductsCommon->getID() && isset($_GET['Products']) ) {
         $content_width = (int)MODULE_PRODUCTS_INFO_NEW_ARRIVAL_CONTENT_WIDTH;
         $text_position = MODULE_PRODUCTS_INFO_NEW_ARRIVAL_POSITION;
 
-        $CLICSHOPPING_ProductsCommon = Registry::get('ProductsCommon');
         $CLICSHOPPING_Template = Registry::get('Template');
 
         if (MODULE_PRODUCTS_INFO_NEW_ARRIVAL_STATUS == 'True') {
@@ -50,7 +50,7 @@
           $products_new_arrival_content = '<!-- Start image_new_arrival -->' . "\n";
 
           ob_start();
-          require($CLICSHOPPING_Template->getTemplateModules($this->group . '/content/products_info_new_arrival'));
+          require_once($CLICSHOPPING_Template->getTemplateModules($this->group . '/content/products_info_new_arrival'));
           $products_new_arrival_content .= ob_get_clean();
 
           $products_new_arrival_content .= '<!-- end image_new_arrival -->' . "\n";
